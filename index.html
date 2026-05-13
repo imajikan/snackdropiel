@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Food Drop Game</title>
+<title>Feed The Harrieling!</title>
 
 <style>
 *{
@@ -65,12 +65,18 @@ canvas{
 <body>
 
 <div id="ui">
-    <h1>🍔 FOOD DROP</h1>
+    <h1>🍔 Feed Him NOW!!!</h1>
     <p>Score: <span id="score">0</span></p>
     <p>High Score: <span id="highScore">0</span></p>
     <p>Combo: <span id="combo">0</span>x</p>
     <p>Nyawa: <span id="lives">3</span></p>
     <p>Timer: <span id="timer">60</span>s</p>
+</div>
+    
+<div id="gameOver">
+    <h1>GAME OVER</h1>
+    <h2 id="finalScore"></h2>
+    <button onclick="restartGame()">Main Lagi</button>
 </div>
 
 <div id="otherGames">
@@ -78,12 +84,6 @@ canvas{
     <a href="https://imajikan.github.io/tomat-harriel/" target="_blank">
        Lempar Tomat ke Harriel
     </a>
-</div>
-    
-<div id="gameOver">
-    <h1>GAME OVER</h1>
-    <h2 id="finalScore"></h2>
-    <button onclick="restartGame()">Main Lagi</button>
 </div>
 
 <canvas id="game"></canvas>
